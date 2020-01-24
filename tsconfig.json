@@ -1,0 +1,25 @@
+/*
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": ["es2015", "es5", "es6", "dom"],
+    "downlevelIteration": true
+  }
+}
+*/
+
+//for WORKING PROGRAM
+
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2015",
+    "lib": ["es2015", "es5", "es6", "dom"],
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "types": ["node"]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

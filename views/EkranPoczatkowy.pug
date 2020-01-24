@@ -1,0 +1,60 @@
+doctype html
+html(lang='pl')
+  head
+    meta(charset='UTF-8')
+    title Title
+    link(rel='stylesheet', type='text/css', href='EkranPoczatkowy.css')
+    script(src='storePseudonim.js')
+    script(src='showTopList.js')
+  body.StartPage
+    h1  Kosmiczny Handlarz
+    .tabelka
+      h2.SpisGraczy Top gracze:
+      ol.SpisGraczy
+        li.PojedynczyGracz Mistrz - 1050 ptk
+        li.PojedynczyGracz Silny Gracz - 504 ptk
+        li.PojedynczyGracz Przeciętny Gracz - 300 ptk
+        li.PojedynczyGracz Słaby Gracz - 105 ptk
+        li.PojedynczyGracz AFKer - 0 ptk
+        li.PojedynczyGracz
+        li.PojedynczyGracz
+        li.PojedynczyGracz
+        li.PojedynczyGracz
+        li.PojedynczyGracz
+    script.
+      printTopList();
+    .box
+      a.Przycisk(href='#popup1') Chcesz Zagrać? Kliknij
+      // część odpowiedzialna za popup
+      #popup1.overlay
+        .popup
+          a.close(href='#') Zamknij ×
+          h3 Graj bez logowania
+          br
+          .content
+            form(method='GET')
+              label(for='pseudonim') Pseudonim:
+              input#pseudonim(type='text', required='')
+              .sytuacjePoczatkowe
+              script.
+                printPossibleStarts();
+              input(type='button', value='Rozpocznij', onclick="store();window.location.href='main'")
+            h3  Zarejestruj się
+            form(method='POST', action='newuser')
+              label
+                | Nazwa użytkownika:
+                input.username(type='text', name='username', required='')
+              label
+                | Hasło:
+                input.password(type='password', name='password', required='')
+              input(type='submit', value='Zarejestruj')
+            h3 Zaloguj się
+            form(method='POST', action='login')
+              label
+                | Nazwa użytkownika:
+                input.username(type='text', name='username', required='')
+              label
+                | Hasło:
+                input.password(type='password', name='password', required='')
+              input(type='submit', value='Zaloguj')
+    footer Created by Beniamin Jędrychowski

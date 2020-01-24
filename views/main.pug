@@ -1,0 +1,327 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Title
+        link(rel='stylesheet', type='text/css', href='EkranPoczatkowy.css')
+        script(src='storePseudonim.js')
+    body.StartPage
+        .informacje
+            h1
+                span Informacje o graczu
+            .statystyki
+                span#pseudonim #{pseudonim}
+                // pseudonim
+                span Stan konta:
+                span#stanKonta 10
+                span#timeLeft Pozostały czas gry: 01:46
+        | j
+        div
+            ul#listaPlanet
+                li Lista planet:
+                li
+                    a.Planeta(href='#popup2') Alderaan
+                li
+                    a.Planeta(href='#popup2') Argoland
+                li
+                    a.Planeta(href='#popup2') Arrakis
+                li
+                    a.Planeta(href='#popup2') Corellia
+                li
+                    a.Planeta(href='#popup2') Encja
+                li
+                    a.Planeta(href='#popup2') Gaia
+                li
+                    a.Planeta(href='#popup2') Ksi
+                li
+                    a.Planeta(href='#popup2') NowWhat
+                li
+                    a.Planeta(href='#popup2') Sur'Kesh
+                li
+                    a.Planeta(href='#popup2') Tairia
+                li
+                    a.Planeta(href='#popup2') Tatooine
+                li
+                    a.Planeta(href='#popup2') Ziemia
+                li
+                    a.Planeta(href='#popup2')
+                li
+                    a.Planeta(href='#popup2')
+        div
+            ul#listaStatkow
+                li Lista statków:
+                // Placeholdery na 20 statków
+                // popup3 - statek na planecie, popup4 - statek w trasie
+                li
+                    a.statek(href='#popup3')
+                        .nazwaStatku Axiom
+                        .nazwaPlanety Tatooine
+                li
+                    a.statek(href='#popup4')
+                        .nazwaStatku Enterprise
+                        .nazwaPlanety Corellia
+                li
+                    a.statek(href='#popup3')
+                        .nazwaStatku Goliath
+                        .nazwaPlanety Sur'Kesh
+                li
+                    a.statek(href='#popup4')
+                        .nazwaStatku Hermes
+                        .nazwaPlanety Corellia
+                li
+                    a.statek(href='#popup3')
+                        .nazwaStatku Millenium Falcon
+                        .nazwaPlanety Tatooine
+                li
+                    a.statek(href='#popup4')
+                        .nazwaStatku Niezwyciężony
+                        .nazwaPlanety Argoland
+                li
+                    a.statek(href='#popup3')
+                        .nazwaStatku Normandy SR-2
+                        .nazwaPlanety Gaia
+                li
+                    a.statek(href='#popup4')
+                        .nazwaStatku Nostroma
+                        .nazwaPlanety Arrakis
+                li
+                    a.statek(href='#popup3')
+                        .nazwaStatku Rocinante
+                        .nazwaPlanety Alderaan
+                li
+                    a.statek(href='#popup4')
+                        .nazwaStatku Космонавт Алексе́й Лео́нов
+                        .nazwaPlanety Arrakis
+                li
+                    a.statek(href='#popup3')
+                li
+                    a.statek(href='#popup3')
+                li
+                    a.statek(href='#popup3')
+                li
+                    a.statek(href='#popup3')
+                li
+                    a.statek(href='#popup3')
+                li
+                    a.statek(href='#popup3')
+                li
+                    a.statek(href='#popup3')
+                li
+                    a.statek(href='#popup3')
+                li
+                    a.statek(href='#popup3')
+                li
+                    a.statek(href='#popup3')
+        // popup dla planety
+        #popup2.overlay
+            .popup
+                a.close(href='#') Zamknij ×
+                h2 Ziemia
+                h2 [46, 70]
+                p.naglowek Lista statków na planecie:
+                ul#listaStatkowNaPlanecie
+                    li
+                        a.statek(href='#popup3')
+                    li
+                        a.statek(href='#popup3')
+                    li
+                        a.statek(href='#popup3')
+                    li
+                        a.statek(href='#popup3')
+                    li
+                        a.statek(href='#popup3')
+                    li
+                        a.statek(href='#popup3')
+                    li
+                        a.statek(href='#popup3')
+                    li
+                        a.statek(href='#popup3')
+                    // <div class="nazwaStatku"></div>-
+                br
+                .surowce
+                    h3 Surowce
+                    ul.surowce
+                        li.surowiec
+                            span.typ typ
+                            span.ilosc
+                                | ilosc
+                            span.cenaSprzedazy cena sprzedaży
+                            span.cenaKupna cena kupna
+                        li.surowiec
+                            span.typ Piasek
+                            span.ilosc 100
+                            span.cenaSprzedazy 50
+                            span.cenaKupna 100
+                        li.surowiec
+                            span.typ Ziemniaki
+                            span.ilosc 100
+                            span.cenaSprzedazy 50
+                            span.cenaKupna 100
+                        li.surowiec
+                            span.typ Złoto
+                            span.ilosc 100
+                            span.cenaSprzedazy 50
+                            span.cenaKupna 100
+                        li.surowiec
+                            span.typ
+                            span.ilosc
+                            span.cenaSprzedazy
+                            span.cenaKupna
+                        li.surowiec
+                            span.typ
+                            span.ilosc
+                            span.cenaSprzedazy
+                            span.cenaKupna
+                        li.surowiec
+                            span.typ
+                            span.ilosc
+                            span.cenaSprzedazy
+                            span.cenaKupna
+                        li.surowiec
+                            span.typ
+                            span.ilosc
+                            span.cenaSprzedazy
+                            span.cenaKupna
+        // część odpowiedzialna za popup gdy statek jest na planecie
+        #popup3.overlay
+            .popup2
+                a.close(href='#') Zamknij ×
+                h2 Statek:
+                h2 Rocinante
+                input#shipId(type='hidden', value='-1')
+                br
+                .content
+                    ul.informacjeOStatku
+                        li pozycja: Alderaan
+                        li ładowność: 128
+                    p.ZmianaPlanety
+                        label
+                            | Chcesz zmienić planetę?
+                            select
+                                option(value='Ziemia') Ziemia
+                                option(value='Corellia') Corellia
+                                option(value="Sur'Kesh") Sur'Kesh
+                                option(value='Argoland') Argoland
+                                option(value='Tatooine') Tatooine
+                                option(value='NowWhat') NowWhat
+                                option(value='Ksi') Ksi
+                                option(value='Encja') Encja
+                        button(value='submit') Zmień
+                |             Kup lub sprzedaj surowce
+                .flexbox
+                    p.formularz
+                        label
+                            select#produkty(name='produkty')
+                                option(value='Piasek') Piasek
+                                option(value='Ziemniaki') Ziemniaki
+                                option(value='Złoto') Złoto
+                                option(value='')  
+                                option(value='')  
+                                option(value='')  
+                                option(value='')  
+                                option(value='')  
+                                option(value='')  
+                                option(value='')  
+                                option(value='')  
+                                option(value='')  
+                        label
+                            | Ilość do kupna
+                            input#kupno(value='0', type='number')
+                        label
+                            | Ilość do sprzedania
+                            input#sprzedaz(value='0', type='number')
+                        button(value='submit') Potwierdź
+                    .SurowceNaStatku
+                        p.naglowek Surowce na statku
+                        ul.listaSurowcow
+                            li
+                                span.typ Piasek
+                                span.ilosc 33
+                            li
+                                span.typ Ziemniaki
+                                span.ilosc 83
+                            li
+                                span.typ Piasek
+                                span.ilosc 33
+                            li
+                                span.typ Ziemniaki
+                                span.ilosc 83
+                            li
+                                span.typ Piasek
+                                span.ilosc 33
+                            li
+                                span.typ Ziemniaki
+                                span.ilosc 83
+                            li
+                                span.typ Piasek
+                                span.ilosc 33
+                            li
+                                span.typ Ziemniaki
+                                span.ilosc 83
+                            li
+                                span.typ Piasek
+                                span.ilosc 33
+                            li
+                                span.typ Ziemniaki
+                                span.ilosc 83
+                            li
+                                span.typ Piasek
+                                span.ilosc 33
+                            li
+                                span.typ Ziemniaki
+                                span.ilosc 83
+        // część odpowiedzialna za popup gdy statek jest w podróży
+        #popup4.overlay
+            .popup2
+                a.close(href='#') Zamknij ×
+                input#shipId2(type='hidden', data-id='-1')
+                h2 Statek:
+                h2 Rocinate
+                br
+                .content
+                    ul.informacjeOStatku
+                        li pozycja: w podróży
+                        li ładowność: 128
+                .header
+                    | Nie możesz sprzedawać będąc w podróży
+                .SurowceNaStatku
+                    p.naglowek Surowce na statku
+                    ul.listaSurowcow
+                        li
+                            span.typ
+                            span.ilosc
+                        li
+                            span.typ
+                            span.ilosc
+                        li
+                            span.typ
+                            span.ilosc
+                        li
+                            span.typ
+                            span.ilosc
+                        li
+                            span.typ
+                            span.ilosc
+                        li
+                            span.typ
+                            span.ilosc
+                        li
+                            span.typ
+                            span.ilosc
+                        li
+                            span.typ
+                            span.ilosc
+                        li
+                            span.typ
+                            span.ilosc
+                        li
+                            span.typ
+                            span.ilosc
+                        li
+                            span.typ
+                            span.ilosc
+                        li
+                            span.typ
+                            span.ilosc
+        script(type='module', src='Model.js')
+        script(type='module', src='View.js')

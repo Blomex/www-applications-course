@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="EkranPoczatkowy.css">
+    <script src="storePseudonim.js"></script>
+</head>
+<body class="StartPage">
+    <div class="informacje">
+        <h1><span>Informacje o graczu</span></h1>
+        <div class="statystyki">
+    <span id="pseudonim"></span><!--pseudonim-->
+            <span>Stan konta: </span>
+    <span id="stanKonta">10</span>
+    <span id="timeLeft">Pozostały czas gry: 01:46</span>
+        </div>
+    </div>j
+    <div>
+        <ul id="listaPlanet">
+            <li>Lista planet:</li>
+            <li><a class="Planeta" href="#popup2">Alderaan</a></li>
+            <li><a class="Planeta" href="#popup2">Argoland</a></li>
+            <li><a class="Planeta" href="#popup2">Arrakis</a></li>
+            <li><a class="Planeta" href="#popup2">Corellia</a></li>
+            <li><a class="Planeta" href="#popup2">Encja</a></li>
+            <li><a class="Planeta" href="#popup2">Gaia</a></li>
+            <li><a class="Planeta" href="#popup2">Ksi</a></li>
+            <li><a class="Planeta" href="#popup2">NowWhat</a></li>
+            <li><a class="Planeta" href="#popup2">Sur'Kesh</a></li>
+            <li><a class="Planeta" href="#popup2">Tairia</a></li>
+            <li><a class="Planeta" href="#popup2">Tatooine</a></li>
+            <li><a class="Planeta" href="#popup2">Ziemia</a></li>
+            <li><a class="Planeta" href="#popup2"></a></li>
+            <li><a class="Planeta" href="#popup2"></a></li>
+
+        </ul>
+    </div>
+    <div>
+        <ul id="listaStatkow">
+            <li>Lista statków:</li>
+            <!--Placeholdery na 20 statków-->
+            <!--popup3 - statek na planecie, popup4 - statek w trasie-->
+            <li><a class="statek" href="#popup3"><div class="nazwaStatku">Axiom</div><div class="nazwaPlanety">Tatooine</div></a></li>
+            <li><a class="statek" href="#popup4"><div class="nazwaStatku">Enterprise</div><div class="nazwaPlanety">Corellia</div></a></li>
+            <li><a class="statek" href="#popup3"><div class="nazwaStatku">Goliath</div><div class="nazwaPlanety">Sur'Kesh</div></a></li>
+            <li><a class="statek" href="#popup4"><div class="nazwaStatku">Hermes</div><div class="nazwaPlanety">Corellia</div></a></li>
+            <li><a class="statek" href="#popup3"><div class="nazwaStatku">Millenium Falcon</div><div class="nazwaPlanety">Tatooine</div></a></li>
+            <li><a class="statek" href="#popup4"><div class="nazwaStatku">Niezwyciężony</div><div class="nazwaPlanety">Argoland</div></a></li>
+            <li><a class="statek" href="#popup3"><div class="nazwaStatku">Normandy SR-2</div><div class="nazwaPlanety">Gaia</div></a></li>
+            <li><a class="statek" href="#popup4"><div class="nazwaStatku">Nostroma</div><div class="nazwaPlanety">Arrakis</div></a></li>
+            <li><a class="statek" href="#popup3"><div class="nazwaStatku">Rocinante</div><div class="nazwaPlanety">Alderaan</div></a></li>
+            <li><a class="statek" href="#popup4"><div class="nazwaStatku">Космонавт Алексе́й Лео́нов</div><div class="nazwaPlanety">Arrakis</div></a></li>
+            <li><a class="statek" href="#popup3"></a></li>
+            <li><a class="statek" href="#popup3"></a></li>
+            <li><a class="statek" href="#popup3"></a></li>
+            <li><a class="statek" href="#popup3"></a></li>
+            <li><a class="statek" href="#popup3"></a></li>
+            <li><a class="statek" href="#popup3"></a></li>
+            <li><a class="statek" href="#popup3"></a></li>
+            <li><a class="statek" href="#popup3"></a></li>
+            <li><a class="statek" href="#popup3"></a></li>
+            <li><a class="statek" href="#popup3"></a></li>
+
+
+        </ul>
+    </div>
+    <!--popup dla planety-->
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">Zamknij &times;</a>
+            <h2>Ziemia</h2>
+            <h2>[46, 70]</h2>
+            <p class="naglowek">Lista statków na planecie:</p>
+            <ul id="listaStatkowNaPlanecie">
+                <li><a class="statek" href="#popup3"></a></li>
+                <li><a class="statek" href="#popup3"></a></li>
+                <li><a class="statek" href="#popup3"></a></li>
+                <li><a class="statek" href="#popup3"></a></li>
+                <li><a class="statek" href="#popup3"></a></li>
+                <li><a class="statek" href="#popup3"></a></li>
+                <li><a class="statek" href="#popup3"></a></li>
+                <li><a class="statek" href="#popup3"></a></li>
+
+                <!--<div class="nazwaStatku"></div>--->
+
+            </ul>
+            <br>
+            <div class="surowce">
+                <h3>Surowce</h3>
+                <ul class="surowce">
+                    <li class = "surowiec">
+                        <span class="typ">typ</span>
+                        <span class="ilosc
+">ilosc
+                        </span>
+                        <span class="cenaSprzedazy">cena sprzedaży</span>
+                        <span class="cenaKupna">cena kupna</span>
+                    </li>
+                    <li class="surowiec">
+                        <span class="typ">Piasek</span>
+                        <span class="ilosc
+">100</span>
+                        <span class="cenaSprzedazy">50 </span>
+                        <span class="cenaKupna">100</span>
+                    </li>
+                    <li class="surowiec">
+                        <span class="typ">Ziemniaki</span>
+                        <span class="ilosc
+">100</span>
+                        <span class="cenaSprzedazy">50 </span>
+                        <span class="cenaKupna">100</span>
+                    </li>
+                    <li class="surowiec">
+                        <span class="typ">Złoto</span>
+                        <span class="ilosc
+">100</span>
+                        <span class="cenaSprzedazy">50</span>
+                        <span class="cenaKupna">100</span>
+                    </li>
+                    <li class="surowiec">
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                        <span class="cenaSprzedazy"></span>
+                        <span class="cenaKupna"></span>
+                    </li>
+                    <li class="surowiec">
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                        <span class="cenaSprzedazy"></span>
+                        <span class="cenaKupna"></span>
+                    </li>
+                    <li class="surowiec">
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                        <span class="cenaSprzedazy"></span>
+                        <span class="cenaKupna"></span>
+                    </li>
+                    <li class="surowiec">
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                        <span class="cenaSprzedazy"></span>
+                        <span class="cenaKupna"></span>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</div>
+    <!--część odpowiedzialna za popup gdy statek jest na planecie-->
+    <div id="popup3" class="overlay">
+        <div class="popup2">
+            <a class="close" href="#">Zamknij &times;</a>
+            <h2>Statek: </h2>
+            <input id = "shipId" type="hidden" value="-1">
+            <br>
+            <div class="content">
+                <ul class="informacjeOStatku">
+                    <li>pozycja: Alderaan</li>
+                    <li>ładowność: 128</li>
+                </ul>
+                <p class="ZmianaPlanety">
+                    <label>Chcesz zmienić planetę?
+                        <select>
+                            <option value="Ziemia">Ziemia</option>
+                            <option value="Corellia">Corellia</option>
+                            <option value="Sur'Kesh">Sur'Kesh</option>
+                            <option value="Argoland">Argoland</option>
+                            <option value="Tatooine">Tatooine</option>
+                            <option value="NowWhat">NowWhat</option>
+                            <option value="Ksi">Ksi</option>
+                            <option value="Encja">Encja</option>
+                        </select>
+                    </label>
+                        <button value="submit">Zmień</button>
+                </p>
+            </div>
+            Kup lub sprzedaj surowce
+            <div class="flexbox">
+                <p class="formularz">
+                    <label>
+                        <select id = "produkty" name="produkty">
+                            <option value="Piasek">Piasek</option>
+                            <option value="Ziemniaki">Ziemniaki</option>
+                            <option value="Złoto">Złoto</option>
+                            <option value="">&nbsp;</option>
+                            <option value="">&nbsp;</option>
+                            <option value="">&nbsp;</option>
+                            <option value="">&nbsp;</option>
+                            <option value="">&nbsp;</option>
+                            <option value="">&nbsp;</option>
+                            <option value="">&nbsp;</option>
+                            <option value="">&nbsp;</option>
+                            <option value="">&nbsp;</option>
+
+                        </select>
+                    </label>
+                    <label>Ilość do kupna
+                        <input id ="kupno" value="0" type="number">
+                    </label>
+                    <label>Ilość do sprzedania
+                        <input id = "sprzedaz" value="0" type="number">
+                    </label>
+                    <button value="submit">Potwierdź</button>
+                </p>
+                <div class="SurowceNaStatku">
+                    <p class="naglowek">Surowce na statku</p>
+                    <ul class="listaSurowcow">
+                        <li>
+                            <span class="typ">Piasek</span>
+                            <span class="ilosc
+">33</span>
+                        </li>
+                        <li>
+                            <span class="typ">Ziemniaki</span>
+                            <span class="ilosc
+">83</span>
+                        </li>
+                        <li>
+                            <span class="typ">Piasek</span>
+                            <span class="ilosc
+">33</span>
+                        </li>
+                        <li>
+                            <span class="typ">Ziemniaki</span>
+                            <span class="ilosc
+">83</span>
+                        </li>
+                        <li>
+                            <span class="typ">Piasek</span>
+                            <span class="ilosc
+">33</span>
+                        </li>
+                        <li>
+                            <span class="typ">Ziemniaki</span>
+                            <span class="ilosc
+">83</span>
+                        </li>
+                        <li>
+                            <span class="typ">Piasek</span>
+                            <span class="ilosc
+">33</span>
+                        </li>
+                        <li>
+                            <span class="typ">Ziemniaki</span>
+                            <span class="ilosc
+">83</span>
+                        </li>
+                        <li>
+                            <span class="typ">Piasek</span>
+                            <span class="ilosc
+">33</span>
+                        </li>
+                        <li>
+                            <span class="typ">Ziemniaki</span>
+                            <span class="ilosc
+">83</span>
+                        </li>
+                        <li>
+                            <span class="typ">Piasek</span>
+                            <span class="ilosc
+">33</span>
+                        </li>
+                        <li>
+                            <span class="typ">Ziemniaki</span>
+                            <span class="ilosc
+">83</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--część odpowiedzialna za popup gdy statek jest w podróży-->
+    <div id="popup4" class="overlay">
+        <div class="popup2">
+            <a class="close" href="#">Zamknij &times;</a>
+            <input id = "shipId2" type="hidden" data-id="-1">
+            <h2>Statek: </h2>
+            <br>
+            <div class="content">
+                <ul class="informacjeOStatku">
+                    <li>pozycja: w podróży</li>
+                    <li>ładowność: 128</li>
+                </ul>
+            </div>
+            <div class="header">
+                Nie możesz sprzedawać będąc w podróży
+            </div>
+            <div class="SurowceNaStatku">
+                <p class="naglowek">Surowce na statku</p>
+
+                <ul class="listaSurowcow">
+                    <li>
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                    </li>
+                    <li>
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                    </li>
+                    <li>
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                    </li>
+                    <li>
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                    </li>
+                    <li>
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                    </li>
+                    <li>
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                    </li>
+                    <li>
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                    </li>
+                    <li>
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                    </li>
+                    <li>
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                    </li>
+                    <li>
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                    </li>
+                    <li>
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                    </li>
+                    <li>
+                        <span class="typ"></span>
+                        <span class="ilosc
+"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script>setPseudonim();</script>
+    <script type="module" src="View.js"></script>
+
+</body>
+</html>

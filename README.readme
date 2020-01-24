@@ -1,0 +1,16 @@
+
+npm install mocha chai typescript ts-node selenium-webdriver mocha-webdriver @types/chai @types/mocha @types/selenium-webdriver --save-dev
+
+aby odpalić program :
+odkomentowane export {rzeczy} w Model.ts
+odkomentowany tsconfig
+jakiś run na EkranPoczątkowy.html czy coś
+
+żeby odpalić TESTY 'MochaChaiTests':
+- zakomentować tsconfig
+- zakomentować export {rzeczy} w Model.ts
+dopisać 'export' przy klasie (JEDNEJ) w Model.ts
+
+npx mocha -r ts-node/register MochaChaiTests.ts --experimental-modules --skip-project --downlevelIteration bo oczywiście z poziomu IDE nie zadziałają
+
+ewentualnie w IDe opcje -r ts-node/register --experimental-modules --skip-project --downlevelIteration

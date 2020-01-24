@@ -1,0 +1,554 @@
+.StartPage{
+    background-color:black;
+    background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: 100%;
+    object-fit:contain;
+    bottom: 10px;
+    right: 10px;
+}
+
+ol{
+    background-color:aliceblue;
+    display:block;
+}
+
+button{
+    background-color:black;
+    color:antiquewhite;
+    display:block;
+    margin: 0 auto;
+}
+.informacje{
+    color:antiquewhite;
+    text-align:center;
+}
+.Przycisk{
+    font-size: 1em;
+    padding: 10px;
+    color: white;
+    border: 2px solid darkslateblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+
+.surowiec :nth-child(1):empty{
+    visibility: hidden;
+}
+
+.Przycisk:hover{
+    background-color:darkslateblue;
+    width:50%;
+}
+
+ul#listaPlanet{
+    border:solid darkblue;
+    border-radius: 20px/50px;
+    background-color: rgba( 40, 80, 198,0.16);
+    float:left;
+    text-align:center;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    font-size: 3em;
+}
+.statystyki{
+    border: solid rgba(190, 30, 30, 1);
+    border-radius: 20px/50px;
+    background-color: rgba(190, 30, 30, 0.1)
+}
+.statystyki span{
+    display:block;
+    font-size: 2em;
+}
+.nazwaPlanety{
+    word-wrap:break-word;
+    width:50%;
+    float:right;
+    text-align:left;
+}
+ul{
+    list-style:none;
+}
+.surowiec:empty{
+    visibility:hidden;
+}
+
+.surowce{
+    width:100%;
+    display:table;
+}
+.surowiec{
+    display:table-row;
+}
+.surowiec span{
+    text-align:center;
+    border: solid 1px darkgrey;
+    overflow-wrap: break-word;
+    display:block;
+    width:20%;
+    float:left;
+}
+.surowiec .cenaKupna{
+    background: rgba(10, 10, 220, 0.15);
+    border-bottom: solid 1px darkgrey;
+}
+.surowiec .cenaSprzedazy{
+    background: rgba(10, 220, 10, 0.15);
+    border-bottom:solid 1px darkgrey;
+}
+.surowiec .ilosc{
+    background: rgba(220, 20, 10, 0.15);
+    border-top: solid 1px darkgrey;
+}
+.surowiec .typ{
+    border-top:solid 1px darkgrey;
+    background: black;
+}
+.surowiec span:empty{
+    display:none;
+}
+
+
+
+.formularz select {
+    overflow-wrap: break-word;
+    width: auto;
+    text-align: center;
+    padding: 0 1vw;
+    font-size: 2em;
+    display: block;
+    border-color: darkgreen;
+    border-radius: 20px/20px;
+    color: antiquewhite;
+    background: black;
+    -webkit-appearance: default-button;
+    scroll-behavior: smooth;
+}
+p select {
+    background-color: black;
+    color:antiquewhite;
+    margin:auto;
+    border: darkgreen solid 1px;
+    font-size:1.16em;
+    display:block;
+    text-align:center;
+}
+.ZmianaPlanety{
+    display: flex;
+    margin:auto;
+    font-size: 1.33em;
+}
+
+.informacjeOStatku{
+    width: 40%;
+}
+.informacjeOStatku li{
+    width: 100%;
+    text-align:center;
+    border:solid darkgreen;
+    padding: 1vw;
+    background-color:rgba(40, 190, 140, 0.1);
+}
+.listaSurowcow{
+    margin:auto;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    padding-left: 0;
+}
+
+.listaSurowcow li{
+    list-style-position: inside;
+    page-break-inside:avoid;
+    -webkit-column-break-inside: avoid;
+    break-inside:avoid;
+    text-align:center;
+    border:solid darkgreen 2px;
+    background-color:rgba(40, 190, 140, 0.1);
+}
+.formularz{
+    display:block;
+    position:relative;
+}
+.content{
+    display:flex;
+}
+.listaSurowcow{
+    display:block;
+}
+.ZmianaPlanety{
+    display: block;
+}
+.formularz input{
+    width:auto;
+    padding:1vw;
+    border-color: darkgreen;
+    border-radius: 20px/20px;
+    font-size: 2em;
+    color:antiquewhite;
+    display:block;
+    background-color:rgba(0, 0, 0, 0.2);
+}
+option[value=""]{
+    display:none;
+    visibility:hidden;
+}
+.nazwaStatku{
+    /* background-color:blue; debug*/
+    overflow:auto;
+    word-wrap:break-word;
+    z-index: 1;
+    display:inline-block;
+    width:50%;
+    text-align:left;
+}
+li a.Planeta{
+    display:block;
+    padding: 1vw 10vw;
+    font-size: 0.66em;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-decoration:none;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+
+.Planeta:hover{
+    background-color:darkblue;
+    border-radius: 20px/50px;
+}
+.Planeta:empty{
+    display:none;
+}
+ul#listaStatkow{
+    width:50%;
+    border: solid darkgreen;
+    border-radius: 20px/50px;
+    background-color: rgba(108, 198, 198, 0.16);
+    float:right;
+    text-align:center;
+    list-style-type:none;
+    padding:0;
+    font-size: 3em;
+}
+#listaStatkowNaPlanecie li a.statek:first-child:empty{
+    display:none;
+    visibility: hidden;
+}
+li a.statek{
+    display: block;
+    padding: 1vw 2vw;
+    font-size: 0.66em;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-decoration:none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+li a.statek:hover{
+    border-radius: 20px/50px;
+    background-color:darkgreen;
+}
+h1{
+    text-align: center;
+    color:antiquewhite;
+}
+li a.statek:empty{
+    display:none;
+    visibility: hidden;
+}
+li a.statek:empty .nazwaStatku{
+    display:none;
+    visibility: hidden;
+}
+div{
+    color:ghostwhite;
+}
+.SurowceNaStatku{
+    text-align:center;
+    margin:auto;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.2);
+    color:darkgoldenrod;
+    text-align:center;
+    padding: 20px;
+}
+.statek:empty{
+    visibility: hidden;
+}
+.nazwaStatku:empty{
+    visibility: hidden;
+}
+.flexbox{
+    display:flex;
+    background:none;
+    color:ghostwhite;
+    margin-bottom: 20px;
+}
+.header{
+    font-size: 2vw;
+    margin:auto;
+    border-radius:20px/20px;
+    text-align:center;
+    padding:2vw;
+    display:table;
+    width:auto;
+    background: rgba(220, 20, 10, 0.1);
+
+}
+.box {
+    position:relative;
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0);
+    padding: 25px;
+    margin-top:5%;
+    border: 2px solid saddlebrown;
+    border-radius: 10px/30px;
+    background-clip: padding-box;
+    text-align: center;
+}
+.popup{
+    margin: 70px auto;
+    padding: 20px;
+    background: black;
+    color:white;
+    border-radius:20px/10px;
+    border:solid darkblue;
+    width:80%;
+    position:relative;
+    transition: all 2s ease-in-out;
+}
+.popup h2{
+    margin-top: 1px;
+    color: white;
+    font-family: Arial, sans-serif, Tahoma;
+}
+.popup .content{
+    display:inline-block;
+    text-align:center;
+}
+
+.popup .close {
+    color:white;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    transition: all 100ms;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.naglowek{
+    text-align:center;
+    display:flex;
+}
+#listaStatkowNaPlanecie{
+    column-count:4;
+    margin: 10px;
+    font-size:1.66em;
+    text-align:center;
+    color:antiquewhite;
+    float:none;
+}
+#listaStatkowNaPlanecie{
+    color:darkgray;
+    background: rgba(10, 169, 19, 0.06);
+    border: solid 1px darkgreen;
+    border-radius: 0;
+}
+#listaStatkowNaPlanecie li{
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid-column;
+    width:auto;
+    height: auto;
+    margin-left:-20px;
+}
+#listaStatkowNaPlanecie li .statek .nazwaStatku{
+    color:darkgray;
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+.popup2{
+    margin: 70px auto;
+    padding: 20px;
+    background: black;
+    color:white;
+    border-radius:20px/10px;
+    border:solid darkgreen;
+    width:80%;
+    position:relative;
+    transition: all 0.5s ease-in-out;
+}
+.popup2 .close{
+    color:white;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    transition: all 100ms;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.SpisGraczy{
+    color:antiquewhite;
+    display:block;
+    margin:20px auto auto auto;
+    width:80%;
+    padding: 0 20px;
+    text-align:center;
+    background: none;
+    opacity: 1;
+}
+.PojedynczyGracz{
+    border-radius: 20px/50px;
+    margin-top: 5px;
+    box-shadow: 0 1px 1px 0 rgba(130,130,130,0.24);
+    padding:5px;
+
+}
+.PojedynczyGracz:hover{
+    box-shadow: 3px 12px 16px 2px rgba(130,130,130,0.38);
+
+}
+.PojedynczyGracz:empty{
+    display:none;
+}
+
+
+.overlay {
+    /*przyciemnienie tła przy popupie*/
+    /*Niewidoczny, jeśli przycisk nie został naciśnięty*/
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 15, 0.6);
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+    display:none;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    display:block;
+}
+
+@media only screen and (min-width: 540px ) and (min-height: 720px) and (max-width: 800px) {
+    ul#listaPlanet {
+        width:95vw;
+        float: none;
+    }
+    .ZmianaPlanety{
+        font-size: 1em;
+    }
+    .listaSurowcow{
+        column-count:1;
+        border:0;
+    }
+    .formularz input{
+        width:auto;
+    }
+    .formularz select{
+        width:auto;
+    }
+    .listaSurowcow li{
+        border: solid  darkgreen 1px;
+        padding:0;
+    }
+    ul#listaStatkow {
+        float:none;
+        width: 95vw;
+    }
+
+    .box {
+        margin: 0 auto;
+        width: 90vw;
+    }
+
+    .popup {
+        width: 80%;
+        margin: 0;
+    }
+
+    .SpisGraczy {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (min-height: 480px) and (max-height: 960px) and (max-width: 539px) {
+    .StartPage {
+        margin:0;
+        width:95vw;
+        height:auto;
+    }
+    .ZmianaPlanety{
+        font-size:1em;
+        text-align: center;
+        margin-left:25px;
+    }
+    .listaSurowcow{
+        column-count:1;
+        border:0;
+    }
+    .listaSurowcow li{
+        border: solid  darkgreen 1px;
+        padding:0;
+    }
+    .surowce{
+        width:100%;
+        margin-left:-5%;
+    }
+    .surowiec span{
+        width: 45%;
+        border-top:none;
+        border-bottom:none;
+    }
+
+    .formularz input{
+        width:80%;
+    }
+    .formularz select{
+        width:80%;
+    }
+    .informacje{
+        margin-left:1vw;
+    }
+    ul#listaPlanet {
+        margin-left:1vw;
+        width:95vw;
+        float: none;
+    }
+    ul#listaStatkow {
+        margin-left:1vw;
+        float:none;
+        width: 95vw;
+    }
+    .box{
+        margin: 0 auto;
+        width: 80vw;
+    }
+    .popup{
+        width:80%;
+        margin:0 auto;
+    }
+
+    .SpisGraczy{
+        display:block;
+        margin-left: auto;
+        margin-right:auto;
+        width:90%;
+        text-align:center;
+    }
+}

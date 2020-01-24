@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="EkranPoczatkowy.css">
+    <script src="storePseudonim.js"></script>
+    <script src="showTopList.js"></script>
+</head>
+<body class="StartPage">
+<h1> Kosmiczny Handlarz</h1>
+<div class="tabelka">
+    <h2 class="SpisGraczy">Top gracze:</h2>
+    <ol class="SpisGraczy">
+        <li class="PojedynczyGracz">Mistrz - 1050 ptk</li>
+        <li class="PojedynczyGracz">Silny Gracz - 504 ptk</li>
+        <li class="PojedynczyGracz">Przeciętny Gracz - 300 ptk</li>
+        <li class="PojedynczyGracz">Słaby Gracz - 105 ptk</li>
+        <li class="PojedynczyGracz">AFKer - 0 ptk</li>
+        <li class="PojedynczyGracz"></li>
+        <li class="PojedynczyGracz"></li>
+        <li class="PojedynczyGracz"></li>
+        <li class="PojedynczyGracz"></li>
+        <li class="PojedynczyGracz"></li>
+    </ol>
+</div>
+<script>printTopList();</script>
+<div class="box">
+    <a class="Przycisk" href="#popup1">Chcesz Zagrać? Kliknij</a>
+    <!--część odpowiedzialna za popup-->
+    <div id="popup1" class="overlay">
+    <div class="popup">
+        <a class="close" href="#">Zamknij &times;</a>
+        <h3>Graj bez logowania</h3>
+        <br>
+        <div class="content">
+            <form method="GET" >
+                <label for="pseudonim">Pseudonim: </label>
+                <input type="text" id="pseudonim" required >
+                <div class="sytuacjePoczatkowe">
+                </div>
+                <script>printPossibleStarts();</script>
+                <input type="button" value="Rozpocznij" onclick="store();window.location.href='main'" >
+            </form>
+            <h3> Zarejestruj się</h3>
+            <form method="POST" action="newuser">
+                <label>Nazwa użytkownika:
+                    <input type="text" class="username"  name="username" required>
+                </label>
+                <label>Hasło:
+                    <input type="password" class="password" name="password" required>
+                </label>
+                <input type="submit" value="Zarejestruj">
+            </form>
+            <h3>Zaloguj się</h3>
+            <form method="POST" action="login">
+                <label>Nazwa użytkownika:
+                    <input type="text" class="username" name="username" required>
+                </label>
+                <label>Hasło:
+                    <input type="password" class="password" name="password" required>
+                </label>
+                <input type="submit" value="Zaloguj">
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+<footer>Created by Beniamin Jędrychowski</footer>
+</body>
+</html>
