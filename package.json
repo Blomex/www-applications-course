@@ -11,6 +11,7 @@
     "sqlite3": "^4.0.8"
   },
   "devDependencies": {
+    "lodash": ">=4.17.12"
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
     "@types/selenium-webdriver": "^4.0.0",
